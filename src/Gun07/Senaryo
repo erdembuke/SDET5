@@ -1,0 +1,12 @@
+1- https://www.saucedemo.com/
+2- login islemini yapiniz
+3- Sauce Labs Backpack a tiklatin ve sepete ekletin
+4- Sonra geri dönün (Back to products e tiklatin)
+5- Sauce Labs Bolt T-Shirt a tiklatin ve sepete ekleyin
+6- sepete tiklatin
+7- CheckOut a tiklatin
+8- kullanici bilgilerini doldurup Continue ya tiklatin
+9- Burada her bir esyaninin ucretlerinin toplaminin asagidaki ..-
+item total e esit olup olmadigini Assert ile test ediniz.
+
+(XPATH ile cozulecek).

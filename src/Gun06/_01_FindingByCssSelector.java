@@ -1,6 +1,7 @@
 package Gun06;
 
 import Utility.BaseDriver;
+import Utility.MyFunc;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
@@ -22,6 +23,6 @@ public class _01_FindingByCssSelector extends BaseDriver {
         }else System.out.println("Test 1 has Failed");
 
 
-        waitAndQuit();
+        MyFunc.waitForIt(3);
     }
 }

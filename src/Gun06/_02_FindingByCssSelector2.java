@@ -1,6 +1,7 @@
 package Gun06;
 
 import Utility.BaseDriver;
+import Utility.MyFunc;
 import org.junit.Assert;
 import org.junit.Test;
 import org.openqa.selenium.By;
@@ -32,7 +33,7 @@ public class _02_FindingByCssSelector2 extends BaseDriver {
 
 
 
-        waitAndQuit();
+        MyFunc.waitForIt(5);
 
     }
 }
