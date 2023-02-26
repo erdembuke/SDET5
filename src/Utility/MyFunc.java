@@ -13,4 +13,8 @@ public class MyFunc {
 
     }
 
+    public static void randomNumber(int until) {
+
+        }
+
 }

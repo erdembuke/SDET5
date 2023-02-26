@@ -15,25 +15,25 @@ import org.openqa.selenium.WebElement;
 
                 Function.Wait(1);
                 WebElement name = browser.findElement(By.xpath("//*[@class='form-control text-box single-line' and @id='FirstName']"));
-                name.sendKeys("emrah1211");
+                name.sendKeys("emrah121111");
                 Function.Wait(1);
                 WebElement surname = browser.findElement(By.xpath("//*[@class='form-control text-box single-line' and @name='Surname']"));
-                surname.sendKeys("guney1211");
+                surname.sendKeys("guney121111");
                 Function.Wait(1);
                 WebElement post = browser.findElement(By.xpath("//*[@name='E_post' and @id='E_post']"));
-                post.sendKeys("emrahgun1211@hotmail.com");
+                post.sendKeys("emrahgun121111@hotmail.com");
                 Function.Wait(1);
                 WebElement mobile = browser.findElement(By.xpath("//*[@name='Mobile' and @id='Mobile']"));
-                mobile.sendKeys("444552566677888111");
+                mobile.sendKeys("44455256667788811111");
                 Function.Wait(1);
                 WebElement Uname = browser.findElement(By.xpath("//*[@name='Username' and @id='Username']"));
-                Uname.sendKeys("emrah1121");
+                Uname.sendKeys("emrah112111");
                 Function.Wait(1);
                 WebElement Pword = browser.findElement(By.xpath("//*[@name='Password' and @id='Password']"));
-                Pword.sendKeys("21234111");
+                Pword.sendKeys("2123411111");
                 Function.Wait(1);
                 WebElement Cword = browser.findElement(By.xpath("//*[@id='ConfirmPassword' and @name='ConfirmPassword']"));
-                Cword.sendKeys("21234111");
+                Cword.sendKeys("2123411111");
                 Function.Wait(1);
                 WebElement Submit = browser.findElement(By.xpath("//*[@id='submit' and @value='Submit']"));
                 Submit.click();
@@ -43,6 +43,7 @@ import org.openqa.selenium.WebElement;
                 Assert.assertTrue("test fail", reSUB.getText().equals("Registration Successful"));
                 Function.Wait(1);
                 quitBrowser();
+
 
 
             }
@@ -107,8 +108,6 @@ import org.openqa.selenium.WebElement;
                 WebElement Create = browser.findElement(By.xpath("//*[@type='submit' and @value='Create']"));
                 Create.click();
                 quitBrowser();
-
-
             }
         }
 
