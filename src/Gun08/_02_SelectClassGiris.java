@@ -12,9 +12,7 @@ public class _02_SelectClassGiris extends BaseDriver {
     @Test
     public void Test1() {
 
-        driver.manage().deleteAllCookies();
         driver.navigate().to("https://www.amazon.com.tr/");
-        driver.manage().deleteAllCookies();
         MyFunc.waitForIt(2);
 
         WebElement webMenu = driver.findElement(By.id("searchDropdownBox"));
