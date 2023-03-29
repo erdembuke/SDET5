@@ -3,6 +3,9 @@ package Utility;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeDriverService;
+import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
 import java.util.logging.Level;
@@ -11,6 +14,8 @@ import java.util.logging.Logger;
 public class BaseDriver {
 
     public static WebDriver driver;
+    public static WebDriverWait wait;
+    public static Actions actions;
 
     static{
         closeUnusedChromes();
@@ -20,8 +25,9 @@ public class BaseDriver {
 
         // output ' daki gerekmeyen loglari kaldiracagiz
         System.setProperty(ChromeDriverService.CHROME_DRIVER_SILENT_OUTPUT_PROPERTY , "true");
-
-        driver = new ChromeDriver();
+        ChromeOptions options = new ChromeOptions();
+        options.addArguments("--remote-allow-origins=*");
+        driver = new ChromeDriver(options);
 
         Duration dr = Duration.ofSeconds(30);
         driver.manage().timeouts().pageLoadTimeout(dr);
@@ -34,7 +40,8 @@ public class BaseDriver {
         // yapilmadan once hazir hale gelmesi icin verilen zaman
         // eger 2sn yüklerse 30sn beklemez.
         driver.manage().window().maximize();
-
+        wait = new WebDriverWait(driver,Duration.ofSeconds(15));
+        actions = new Actions(driver);
 
     }
 
